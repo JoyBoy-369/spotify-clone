@@ -5,8 +5,12 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
+  width: 35px;
+  height: 23px;
+}
+
+.switch-container {
+  text-align: right;
 }
 
 .slider {
@@ -16,7 +20,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  border: 2px solid rgb(64, 64, 64);
+  background-color: #000;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -24,20 +29,28 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 0px;
-  background-color: white;
+  height: 23px;
+  width: 23px;
+  top: -2px;
+  left: -10px;
+  background-color: rgb(158, 158, 158);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #1db954;
+  border: 2px solid #1db954;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
+}
+
+input:focus + .slider:before,
+input:checked + .slider:before,
+input:hover + .slider:before {
+  background-color: #fff;
 }
 
 input:checked + .slider:before {
@@ -53,4 +66,17 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/*label*/
+.label {
+  text-align: left;
+}
+
+.label::first-letter {
+  text-transform: capitalize;
+}
+/*the toggle switch container*/
+.toggle-switch {
+  margin-bottom: 20px;
 }

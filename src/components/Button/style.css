@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 200px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.btn.btn-social-fb {
+  padding: 10px 50px;
+  background-color: #3b5998;
+}
+
+.btn.btn-login {
+  background-color: rgb(29, 185, 84);
+}

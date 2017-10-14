@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import "./style.css";
 
 const ToggleSwitch = props =>
-  <div className="row">
-    <div className="col span-1-of-2">Remember me?</div>
-    <div className="col span-1-of-2">
+  <div className="row toggle-switch">
+    <div className="col span-1-of-2 label">
+      {props.label}
+    </div>
+    <div className="col span-1-of-2 switch-container">
       <label className="switch">
         <input type="checkbox" />
         <span className="slider round" />

@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import logo from "./images/logo.png";
 import Login from "./scenes/LoginForm";
-import "./App.css";
 import "./vendors/css/grid.css";
+import "./App.css";
 
 const App = () =>
   <div className="App">
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <Login />
-    </div>
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+    </header>
+    <Login />
   </div>;
 
 export default App;

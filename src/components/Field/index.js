@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css";
 
 class Field extends Component {
   onChange = evt => {
@@ -9,8 +10,9 @@ class Field extends Component {
     return (
       <div>
         <input
+          type="text"
           placeholder={this.props.placeholder}
-          value="test"
+          value=""
           onChange={this.onChange}
         />
       </div>

@@ -1,6 +1,9 @@
 import React from "react";
+import "./style.css";
 
-const Button=(props)=>
-  <button className="social-btn-fb">{props.content}</button>
-  
-  export default Button
+const Button = props =>
+  <button className={`${props.btnStyle}`}>
+    {props.content}
+  </button>;
+
+export default Button;
