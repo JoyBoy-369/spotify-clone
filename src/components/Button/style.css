@@ -7,11 +7,27 @@
   text-transform: uppercase;
 }
 
+/*facebook button*/
 .btn.btn-social-fb {
   padding: 10px 50px;
   background-color: #3b5998;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
+.btn.btn-social-fb:hover,
+.btn.btn-social-fb:active {
+  transform: scale(1.1);
+  background-color: rgb(55, 98, 186);
+}
+
+/*login button*/
 .btn.btn-login {
   background-color: rgb(29, 185, 84);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn.btn-login:hover,
+.btn.btn-login:active {
+  transform: scale(1.1);
+  background-color: rgb(30, 215, 96);
 }

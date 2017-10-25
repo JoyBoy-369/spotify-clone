@@ -2,8 +2,17 @@ import React, { Component } from "react";
 import "./style.css";
 
 class Field extends Component {
+  state = {
+    value: this.props.value
+  };
+
   onChange = evt => {
-    console.log("value changed");
+    const name = this.props.name;
+    const value = evt.target.value;
+
+    this.setState({ value });
+
+    this.props.onChangeHandle({ name, value });
   };
 
   render() {
@@ -12,7 +21,8 @@ class Field extends Component {
         <input
           type="text"
           placeholder={this.props.placeholder}
-          value=""
+          name={this.props.name}
+          value={this.state.value}
           onChange={this.onChange}
         />
       </div>

@@ -15,7 +15,6 @@
 
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -78,5 +77,5 @@ input:checked + .slider:before {
 }
 /*the toggle switch container*/
 .toggle-switch {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
