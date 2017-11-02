@@ -4,7 +4,7 @@ import "./style.css";
 const ToggleSwitch = props =>
   <div className="row toggle-switch">
     <div className="col span-1-of-2 label">
-      {props.label}
+      {props.children}
     </div>
     <div className="col span-1-of-2 switch-container">
       <label className="switch">
@@ -13,4 +13,5 @@ const ToggleSwitch = props =>
       </label>
     </div>
   </div>;
+
 export default ToggleSwitch;

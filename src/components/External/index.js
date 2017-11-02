@@ -4,7 +4,7 @@ import "./style.css";
 const External = props =>
   <div className="row link">
     <a href="#">
-      {props.linkName}
+     {props.children}
     </a>
   </div>;
 
