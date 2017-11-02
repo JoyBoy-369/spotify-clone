@@ -1,9 +1,15 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import "./style.css";
 
 const Button = props =>
-  <button className={`${props.btnStyle}`}>
-    {props.content}
+  <button className={`${props.btnStyle}`} onClick={props.clickHandle}>
+  {props.children}
   </button>;
+
+Button.PropTypes={
+  clickHandle:PropTypes.func.isRequired,
+  btnStyle:PropTypes.string.isRequired
+}
 
 export default Button;

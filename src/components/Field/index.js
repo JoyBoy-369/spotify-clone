@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import "./style.css";
 
 class Field extends Component {
@@ -7,11 +8,9 @@ class Field extends Component {
   };
 
   onChange = evt => {
-    const name = this.props.name;
+    const name=this.props.name;
     const value = evt.target.value;
-
     this.setState({ value });
-
     this.props.onChangeHandle({ name, value });
   };
 
@@ -21,13 +20,19 @@ class Field extends Component {
         <input
           type="text"
           placeholder={this.props.placeholder}
-          name={this.props.name}
           value={this.state.value}
           onChange={this.onChange}
         />
       </div>
     );
   }
+}
+
+Field.propTypes={
+  onChangeHandle:PropTypes.func.isRequired,
+  placeholder:PropTypes.string.isRequired,
+  name:PropTypes.string.isRequired,
+  value:PropTypes.string.isRequired,
 }
 
 export default Field;
