@@ -7,7 +7,6 @@ import "./vendors/css/grid.css";
 import "./vendors/css/ionicons.min.css";
 
 const App = () =>
-
 <Switch>
 <PrivateRoute path="/landing" component={Landing}></PrivateRoute>
 <Route path="/login" component={Login}></Route>
