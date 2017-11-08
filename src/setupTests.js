@@ -1,4 +1,4 @@
-import raf from 'raf.polyfill';
+import raf from './raf.polyfill.js';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

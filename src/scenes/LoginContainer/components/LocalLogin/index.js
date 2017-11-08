@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import { Field, ToggleSwitch, Button, ErrorContainer } from "../../../../components";
+import { Field, ToggleSwitch, Button, ErrorContainer } from "components";
 import "./style.css";
 
 class LocalLogin extends Component {

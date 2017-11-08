@@ -1,0 +1,10 @@
+[
+    {
+        "Library":{
+            "titles":["Recently Played", "Songs", "Albums", "Artists", "Stations", "LocalFiles", "Podcasts"]
+        },
+        "PlayList":{
+            "titles":["hello","bye"]
+        }
+    }
+]

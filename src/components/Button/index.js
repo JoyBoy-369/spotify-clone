@@ -8,7 +8,7 @@ const Button = props =>
   </button>;
 
 Button.PropTypes={
-  clickHandle:PropTypes.func.isRequired,
+  clickHandle:PropTypes.func,
   btnStyle:PropTypes.string.isRequired
 }
 

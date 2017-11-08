@@ -1,0 +1,27 @@
+
+.sidebar{
+    background-color:rgb(18,18,18);
+    text-transform: capitalize;
+    padding:25px 0;
+    float:left;
+    text-align:left;
+    width:250px;
+}
+
+.active{
+    border-left: 2px solid rgb(29, 185, 84);
+}
+
+li{
+    display:block;
+}
+
+li:not(:last-child){
+    margin-bottom:10px;
+}
+
+.sidebar__link{
+    text-decoration: none;
+    color:rgb(256,255,255);
+    padding:0 50px;
+}
