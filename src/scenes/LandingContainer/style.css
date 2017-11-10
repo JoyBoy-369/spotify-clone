@@ -1,13 +1,10 @@
 .top-content{
-    height:500px;
+    height:85vh;
+    background-image:linear-gradient(to bottom,rgb(64,64,64),rgb(24,24,24))
 }
 
 .clearfix::after{
     content:"";
     display: block;
     clear:both;
-}
-
-.clearfix{
-    background-color: blue;
 }

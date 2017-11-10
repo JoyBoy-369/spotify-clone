@@ -1,14 +1,15 @@
-.btn {
+#root .btn {
   display: inline-block;
   padding: 10px 40px;
   color: white;
+  font-weight:100;
   border-radius: 200px;
   border: 0;
   text-transform: uppercase;
 }
 
 /*facebook button*/
-.btn.btn-social-fb {
+#root .btn.btn-social-fb {
   padding: 10px 50px;
   background-color: #3b5998;
   transition: transform 0.2s, background-color 0.2s;
@@ -21,7 +22,7 @@
 }
 
 /*login button*/
-.btn.btn-login {
+#root .btn.btn-login {
   background-color: rgb(29, 185, 84);
   transition: transform 0.2s, background-color 0.2s;
 }
@@ -33,14 +34,13 @@
 }
 
 /*navigation*/
-.navigation__btn{
-  width:50px;
-}
 
 .navigation__btn--forward::before{
  content:"\003e";
 }
 
-.navigation__btn--back::before { content:"\003c"; }
+.navigation__btn--back::before { 
+  content:"\003c"; 
+}
 
 /*upgrade button*/

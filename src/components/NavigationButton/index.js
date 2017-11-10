@@ -7,7 +7,9 @@ class NavigationButton extends React.Component{
     render(){
         return(
             <Link to="/login">
-            <Button btnStyle={`navigation__btn navigation__btn--${this.props.btnModifier}`}></Button>
+            <button class="circular ui  basic icon button">
+            <i class={`${this.props.icon}`}></i>
+            </button>
             </Link>
         )
     }

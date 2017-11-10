@@ -11,11 +11,15 @@ class Sidebar extends React.Component{
         return(
            <aside className="sidebar">
                <ul>
-                   <li> <NavLink activeClassName="active" className="sidebar__link" to="/landing">browse</NavLink></li>
-                   <li> <NavLink className="sidebar__link" to="/landing">radio</NavLink></li>
+                   <li> <NavLink activeClassName="active" className="sidebar__link" to={`${this.props.pathname}/browse`}>browse</NavLink></li>
+                   <li> <NavLink className="sidebar__link" to={`${this.props.pathname}/radio`}>radio</NavLink></li>
                </ul>
                <Library></Library>
                <PlayList></PlayList>
+               <div>
+                <span>Add icon</span>
+                <span>New Playlist</span>
+               </div>
            </aside>
         )
     }
