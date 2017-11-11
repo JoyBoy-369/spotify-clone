@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Button from 'components/Button';
+
+import './style.css';
 
 class NavigationButton extends React.Component{
 
     render(){
         return(
             <Link to="/login">
-            <button class="circular ui  basic icon button">
+            <button class="ui button navigation__btn">
             <i class={`${this.props.icon}`}></i>
             </button>
             </Link>

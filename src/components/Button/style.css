@@ -6,41 +6,42 @@
   border-radius: 200px;
   border: 0;
   text-transform: uppercase;
+  box-shadow:none;
+  transition: all 0.1s;
 }
 
+#root .btn:hover{
+  transform: scale(1.1);
+}
 /*facebook button*/
 #root .btn.btn-social-fb {
   padding: 10px 50px;
-  background-color: #3b5998;
-  transition: transform 0.2s, background-color 0.2s;
+  background-color: rgb(59, 89, 152);
 }
 
-.btn.btn-social-fb:hover,
-.btn.btn-social-fb:active {
-  transform: scale(1.1);
+#root .btn.btn-social-fb:hover,
+#root .btn.btn-social-fb:active {
   background-color: rgb(55, 98, 186);
 }
 
 /*login button*/
 #root .btn.btn-login {
   background-color: rgb(29, 185, 84);
-  transition: transform 0.2s, background-color 0.2s;
 }
 
-.btn.btn-login:hover,
-.btn.btn-login:active {
-  transform: scale(1.1);
+#root .btn.btn-login:hover,
+#root .btn.btn-login:active {
   background-color: rgb(30, 215, 96);
 }
 
-/*navigation*/
-
-.navigation__btn--forward::before{
- content:"\003e";
-}
-
-.navigation__btn--back::before { 
-  content:"\003c"; 
-}
-
 /*upgrade button*/
+#root .header__btn--upgrade{
+  border:1px solid rgb(240,240,240);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  letter-spacing:2px;
+  font-weight: 100;
+  font-family: 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+  background-color: rgb(35,35,35);
+}

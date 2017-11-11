@@ -1,0 +1,20 @@
+#root .navigation__btn{
+    padding:0;
+    border:none;
+    background: transparent;
+    color:rgb(139,139,139);
+  }
+
+#root .active{
+    color:rgb(255,255,255);
+  }
+
+  #root .navigation__icon{
+      margin:0;
+      padding:0;
+  }
+
+  #root .navigation__icon--active{
+    color:rgb(255,255,255);
+}
+  

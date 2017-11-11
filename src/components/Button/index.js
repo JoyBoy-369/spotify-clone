@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import "./style.css";
 
 const Button = props =>
-  <button className={`${props.btnStyle} ui button `} onClick={props.clickHandle}>
+  <button className={`${props.btnStyle}`} onClick={props.clickHandle}>
   {props.children}
   </button>;
 
