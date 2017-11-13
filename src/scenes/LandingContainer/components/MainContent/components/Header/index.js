@@ -10,25 +10,27 @@ import './style.css';
 class Header extends React.Component{
 
     render(){
-        const matchPath=this.props.pathname;
+        const { match, location, history } = this.props.paths;
+        console.log(match,location,history);
+
         return(
           <div className="ui padded middle aligned grid">
-          <div className="two wide column">
-          <NavigationButton icon="big angle left icon navigation__icon"></NavigationButton>
-          <NavigationButton icon="big angle right icon navigation__icon"></NavigationButton>
+          <div className="two wide left aligned column">
+          <NavigationButton icon="big angle left icon navigation__icon" clickHandle={history.goBack}></NavigationButton>
+          <NavigationButton icon="big angle right icon navigation__icon" clickHandle={history.goForward}></NavigationButton>
           </div>
           <div className="four wide column">
           <SearchBar></SearchBar>
           </div>
-          <div className="four wide column"></div>
-          <div className="two wide column">
+          <div className="three wide column"></div>
+          <div className="three wide column">
           <Button btnStyle="tiny btn header__btn--upgrade">upgrade</Button>
           </div>
           <div className="three wide column">
           <Profile></Profile>
           </div>
-          <div className="column ">
-            <NavigationButton icon="big down angle icon navigation__icon navigation__icon--active"></NavigationButton>
+          <div className="column">
+            <Menu icon="big down angle icon "></Menu>
           </div>
           </div>
         )

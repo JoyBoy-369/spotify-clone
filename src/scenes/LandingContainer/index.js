@@ -5,11 +5,12 @@ import MainContent from './components/MainContent';
 import './style.css';
 
 const Landing=(props)=>{
- const matchPath=props.match.path;
-return (<section >
+ const {match,history,location}=props;
+return (
+    <section >
 <div className="top-content clearfix">
- <Sidebar pathname={matchPath}></Sidebar>
- <MainContent pathname={matchPath}></MainContent>
+ <Sidebar pathname={match.path}></Sidebar>
+ <MainContent paths={{match,history,location}}></MainContent>
 </div>
 <footer>
 <p>FOOTER</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import Header from './components/Header';
 import Content from './components/Content';
 
@@ -8,15 +8,17 @@ import './style.css';
 class MainContent extends React.Component{
 
     render(){
-        const matchPath=this.props.pathname;
+        const {match,location,history}=this.props.paths;
         return(
         <section>
-        <Header pathname={matchPath}></Header>
-        <Route path={`${matchPath}/browse`} component={Content}></Route>
-        <Route path={`${matchPath}/radio`} ></Route>
-        <Route path={`${matchPath}/:libraryItem`} ></Route>
-        <Route path={`${matchPath}/:playlistItem`} ></Route>
-        <Route path={`${matchPath}/:search`} ></Route>
+        <Header paths={{match,location,history}}></Header>
+        <Switch>
+        <Route path={`${match}/browse`} component={Content}></Route>
+        <Route path={`${match}/radio`} ></Route>
+        <Route path={`${match}/:libraryItem`} ></Route>
+        <Route path={`${match}/:playlistItem`} ></Route>
+        <Route path={`${match}/:search`} ></Route>
+        </Switch>
         </section>
         )
     }

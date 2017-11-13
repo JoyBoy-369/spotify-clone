@@ -1,9 +1,7 @@
 #root .btn {
   display: inline-block;
-  padding: 10px 40px;
   color: white;
   font-weight:100;
-  border-radius: 200px;
   border: 0;
   text-transform: uppercase;
   box-shadow:none;
@@ -15,6 +13,7 @@
 }
 /*facebook button*/
 #root .btn.btn-social-fb {
+  border-radius: 200px;
   padding: 10px 50px;
   background-color: rgb(59, 89, 152);
 }
@@ -26,6 +25,8 @@
 
 /*login button*/
 #root .btn.btn-login {
+  border-radius: 200px;
+  padding: 10px 40px;
   background-color: rgb(29, 185, 84);
 }
 
@@ -36,6 +37,7 @@
 
 /*upgrade button*/
 #root .header__btn--upgrade{
+  width:80%;
   border:1px solid rgb(240,240,240);
   border-radius: 100px;
   padding: 0.4rem 1rem;
@@ -44,4 +46,11 @@
   font-weight: 100;
   font-family: 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
   background-color: rgb(35,35,35);
+}
+
+/*menu button*/
+#root .menu-btn{
+background-color: transparent;
+border-radius: 50%;
+padding:0;
 }
